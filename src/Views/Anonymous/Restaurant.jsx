@@ -372,19 +372,6 @@ export default function Restaurant() {
                     />
                   );
                 })}
-                {foods.map((food) => {
-                  return (
-                    <FoodCard
-                      key={food._id}
-                      food={food}
-                      isOpen={verifyIfIsOpen(
-                        restaurant.openingTime,
-                        restaurant.closedTime,
-                        restaurant.restDays
-                      )}
-                    />
-                  );
-                })}
               </div>
             </div>
             <div className="w-full mt-4 md:mt-8 px-8">
